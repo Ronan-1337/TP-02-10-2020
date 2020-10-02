@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>TP Diapo</title>
+	<script type="module" src="main.js"></script>
+	<style>
+	*{padding:0px;margin:0px;}
+	img{margin:10px; border:5px #ccc solid;}
+	img:hover{cursor:pointer;border:5px #00ff00 solid;}
+	#container-vignettes{text-align:center;background-color:#ddd;}
+	#big-div{text-align:center;background-color:#eee;display:none;font-size:1.5em;}
+	</style>
+</head>
+<body>
+	<h1>TP Diapo</h1>
+	<div id="user-input">
+		<input type="button" name="first" value="first">
+		<input type="button" name="prev" value="previous">
+		<input type="button" name="play" value="Play" id="play-button">
+		<select name="vitesse" id= "speed">
+    		<option value="1000">Vitesse normale</option>
+    		<option value="300">Vitesse rapide</option>
+		    <option value="3000">Vitesse lente</option>
+		</select>
+		<input type="button" name="next" value="next">
+		<input type="button" name="last" value="last">
+	</div>
+	<div id="image">
+		<p>
+			<img id="show-img" src="" alt="" />
+		</p>
+		<p id="show-legend"></p>
+	</div>
+</body>
+</html>
+
+
